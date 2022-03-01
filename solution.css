@@ -57,3 +57,101 @@
     filter: invert(80%) grayscale(100%);
     transform:scale(1.5, 1.5) ;
 }
+.ex-10-icon{
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.ex-11-icon:hover{
+    animation-name: nospin;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(1,0.1);
+    animation-iteration-count: infinite;
+}
+@keyframes nospin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(270deg);
+    }
+}
+.ex-12-top-white{
+    animation-name: rotatetopwhite;
+    animation-duration: 2s;
+    animation-direction: linear;
+    animation-iteration-count:infinite;
+}
+@keyframes rotatetopwhite{
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-bottom-white{
+    animation-name: rotatebottomwhite;
+    animation-duration: 2s;
+    animation-direction: linear;
+    animation-iteration-count:infinite;
+}
+@keyframes rotatebottomwhite{
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+.ex-13-top-white{
+    animation-name: spintopwhite;
+    animation-duration: 2s;
+    animation-direction: linear;
+    animation-iteration-count:infinite;
+}
+@keyframes spintopwhite{
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-13-bottom-white{
+    animation-name: spinbottomwhite;
+    animation-duration: 2s;
+    animation-direction: linear;
+    animation-iteration-count:infinite;
+}
+@keyframes spinbottomwhite{
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
